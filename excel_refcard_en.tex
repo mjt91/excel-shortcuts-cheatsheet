@@ -1,0 +1,99 @@
+\documentclass[8pt]{extarticle} % extarticle: font sizes < 10
+
+\usepackage[
+      pdftitle={Excel Shortcuts for the highly Effcient},
+      pdfauthor={mjt91},
+      pdfkeywords={Excel, Quick Reference, Refcard, Cheat Sheet},
+      pdfsubject={Reference Card for Excel Shortcuts}
+]{hyperref}
+
+\usepackage{refcards}
+
+\usepackage{vmargin}
+% A4
+\setpapersize[portrait]{A4}
+\setmarginsrb%
+{1.5cm}  % left
+{1.0cm}  % top
+{1.5cm}  % right
+{1.0cm}  % bottom
+{0ex}    % header height
+{0ex}    % header separation
+{0ex}    % footer height
+{0ex}    % footser separation
+\setlength\columnsep{7mm}
+
+% Letter
+% \setpapersize[landscape]{USletter}
+% \setmarginsrb%
+% {1.1cm}  % left
+% {1.1cm}  % top
+% {0.9cm}  % right
+% {0.9cm}  % bottom
+% {0ex}    % header height
+% {0ex}    % header separation
+% {0ex}    % footer height
+% {0ex}    % footser separation
+% \setlength\columnsep{4mm}
+
+\begin{document}
+\raggedright
+
+\begin{multicols}{2}
+
+\title{Excel Shortcuts for the highly Effcient}
+
+{\small
+(c) 2024 mjt91 \url{<mjt91@omg.lol>}\\
+\url{http://www.mjt91.url.lol/blog}
+
+This work is licensed under the Creative Commons Attribution-Noncommercial-Share
+Alike 3.0 License. To view a copy of this license, visit
+\url{http://creativecommons.org/licenses/by-nc-sa/}
+}
+
+\vspace*{1pt}
+
+\section{General Shortcuts}
+
+  \vspace{1ex}
+%   \subsection{Simple Data Types}
+  \begin{tabular}{L{0.55\linewidth} L{0.45\linewidth}}
+
+    \tt ALT + F9                & Open VBA tools window \\
+    \tt CTRL + N                & Open new Workbook \\
+    \tt CTRL + P                & Open print pre-view \\
+    \tt CTRL + ;                & Insert current date \\
+    \tt CTRL + L                & Create table \\
+    \tt CTRL + K                & Insert hyperlink \\
+    \tt CTRL + D                & Flash fill from above \\
+    \tt CTRL + +                & Insert new column/row if entire column/row is selected \\
+
+  \end{tabular}
+  
+\section{Navigation}
+
+  \begin{tabular}{L{0.55\linewidth} L{0.45\linewidth}}
+
+    \tt CTRL + SPACE            & Select entire column \\
+    \tt SHIFT + SPACE           & Select entire row \\
+    \tt SHIFT + ↓               & Expand cell selection (any arrow key works) \\
+    \tt SHIFT + CTRL + ↓        & Select all the cells the bottom/left/right/up (any arrow key works) \\
+    \tt CTRL + ↓                & Jump to the last/first cell in the currently selected column/row (any arrow key works) \\
+
+  \end{tabular}
+
+
+\section{Formatting}
+
+  \begin{tabular}{L{0.55\linewidth} L{0.45\linewidth}}
+    
+    \tt CTRL + 1                & Open formatting tool window \\
+    \tt CTRL + SHIFT + \#        & Apply date format \\
+    \tt CTRL + SHIFT + \&       & Add borders to selection \\
+    
+  \end{tabular}
+
+
+\end{multicols}
+\end{document}

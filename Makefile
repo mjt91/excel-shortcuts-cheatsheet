@@ -1,15 +1,15 @@
-all: fortran_refcard_a4.pdf
+all: excel_refcard_en_a4.pdf excel_refcard_en_a4_letter.pdf
 
-fortran_refcard_a4.pdf: excel_refcard_en.tex
+excel_refcard_en_a4.pdf: excel_refcard_en.tex
 	pdflatex $<
 	mv excel_refcard_en.pdf $@
 
-# fortran_refcard_letter.pdf: fortran_refcard_letter.tex
-# 	pdflatex $<
+excel_refcard_en_a4_letter.pdf: excel_refcard_en.tex
+	pdflatex $<
 
-# fortran_refcard_letter.tex: fortran_refcard.tex fortran_refcard_letter.patch
-# 	cp $< $@
-# 	patch $@ fortran_refcard_letter.patch
+excel_refcard_en_a4.tex: excel_refcard_en.tex excel_refcard_en_letter.patch
+	cp $< $@
+	patch $@ excel_refcard_en_letter.patch
 
 clean:
 	rm -f *.out
@@ -17,7 +17,7 @@ clean:
 	rm -f *.aux
 
 distclean: clean
-	rm -f fortran_refcard_letter.tex
+	rm -f excel_refcard_en_letter.tex
 	rm -f *.pdf
 
 .PHONY: all clean distclean
